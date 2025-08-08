@@ -7,7 +7,7 @@ class index(TemplateView):
     template_name = 'inventory/index.html'
 
 
-class SignUp(View):
+class SignUpView(View):
     def get(self, request):
         form = UserRegisterForm()
         return render(request, 'inventory/signup.html', {'form':form})
